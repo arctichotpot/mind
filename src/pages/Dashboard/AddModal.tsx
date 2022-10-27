@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid'
 
 interface Props {
   visible: boolean
-  onCallback: (value?: CallbackParams) => void
+  onCallback: (value?: DashboardCallbackParams) => void
 }
 
 export default function AddModal({ visible, onCallback }: Props) {
@@ -12,7 +12,7 @@ export default function AddModal({ visible, onCallback }: Props) {
 
   const handleOk = () => {
     form.current?.formApi.validate().then((res) => {
-      if (onCallback) onCallback({ ...res, id: nanoid() } as CallbackParams)
+      if (onCallback) onCallback({ ...res, id: nanoid() } as DashboardCallbackParams)
     })
   }
   const handleCancel = () => {

@@ -1,4 +1,4 @@
-interface CallbackParams {
+interface DashboardCallbackParams {
     id: string
     title: string
     tags?: string

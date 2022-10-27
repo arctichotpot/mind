@@ -5,7 +5,6 @@ import AddModal from './AddModal'
 import { cloneDeep } from 'lodash'
 import { IllustrationNoContent } from '@douyinfe/semi-illustrations'
 import { useNavigate } from 'react-router-dom'
-import { stringify } from 'qs'
 import { useRecoilState } from 'recoil'
 import { boardListSelector } from '../../store/list'
 
@@ -15,12 +14,12 @@ const DashboardStyle = styled.div`
 
 export default function Dashboard() {
   const [visible, setVisible] = useState(false)
-  const [list, setList] = useState<CallbackParams[]>([])
+  const [list, setList] = useState<DashboardCallbackParams[]>([])
 
   const navigate = useNavigate()
   const [state, setState] = useRecoilState(boardListSelector)
 
-  const modalCallback = (value: CallbackParams | undefined) => {
+  const modalCallback = (value: DashboardCallbackParams | undefined) => {
     if (value) {
       const arr = cloneDeep(state)
       arr?.push(value)
@@ -45,9 +44,14 @@ export default function Dashboard() {
           Create One
         </Button>
       </Space>
-      <Row>
-        <Col span={4}>
-          {state?.map((item) => (
+      <Row gutter={10}>
+        {state?.map((item) => (
+          <Col
+            span={4}
+            style={{
+              margin: '10px 0 ',
+            }}
+          >
             <Card
               shadows="hover"
               key={item.id}
@@ -60,10 +64,10 @@ export default function Dashboard() {
               <Card.Meta title={item?.title} />
               <Button onClick={() => handleLinkTo(item.id)}>Edit</Button>
             </Card>
-          ))}
-        </Col>
+          </Col>
+        ))}
       </Row>
-      {list.length === 0 ? (
+      {state.length === 0 ? (
         <Empty
           image={<IllustrationNoContent style={{ width: 150, height: 150 }} />}
           description={'There is nothing here'}
