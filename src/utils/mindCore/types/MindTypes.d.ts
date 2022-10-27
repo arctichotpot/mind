@@ -12,7 +12,7 @@ interface MindNode {
     color: string // 字体颜色
     background: string // 节点背景颜色
     tags: string[] // 标签
-    expand:boolean // 是否展开
+    expand: boolean // 是否展开
     children?: MindNode[] // 子集
 }
 
