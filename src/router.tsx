@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 
 import App from './App'
 import Dashboard from './pages/Dashboard/Dashboard'
-import DrawingBoard from './pages/DrawingBoard/DrawingBoard'
+import Board from './pages/Board/Board'
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +16,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/board',
-        element: <DrawingBoard />,
+        element: <Board />,
       },
     ],
   },

@@ -62,7 +62,19 @@ export default function Dashboard() {
               }}
             >
               <Card.Meta title={item?.title} />
-              <Button onClick={() => handleLinkTo(item.id)}>Edit</Button>
+              <Space>
+                <Button
+                  theme="solid"
+                  type="primary"
+                  size="small"
+                  onClick={() => handleLinkTo(item.id)}
+                >
+                  View
+                </Button>
+                <Button theme="solid" type="primary" size="small">
+                  Edit
+                </Button>
+              </Space>
             </Card>
           </Col>
         ))}
