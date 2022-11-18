@@ -2,7 +2,9 @@ import { G, Rect, Svg, SVG } from "@svgdotjs/svg.js"
 
 
 interface CoreProps {
-    el: HTMLElement // 
+    el: HTMLElement
+    width: number
+    height: number
 }
 
 
@@ -11,19 +13,19 @@ export class Core {
     el: HTMLElement
     width: number
     height: number
-    elRect: DOMRect
+    // elRect: DOMRect
     svg: Svg
     draw: G
 
     constructor(props: CoreProps) {
         this.el = props.el
-        this.elRect = props.el.getBoundingClientRect()
+        // this.elRect = props.el.getBoundingClientRect()
 
         // this.width = this.elRect.width
         // this.height = this.elRect.height
 
-        this.width = this.el.parentElement?.offsetWidth as number
-        this.height = this.el.parentElement?.offsetHeight as number
+        this.width = props.width
+        this.height = props.height
 
         this.svg = SVG().addTo(this.el).size(this.width, this.height)
         this.draw = this.svg.group()
@@ -41,6 +43,9 @@ export class Core {
 
     addText(text: string) {
         console.log(text)
+        // const res = genDragNode(genText(text))
+        // this.draw.dom(res)
+
         this.draw.text(text).fill('#f06').x(10 + this.width / 2).y(10 + this.height / 2).leading(1.3)
 
 
@@ -66,7 +71,7 @@ export class Core {
 
 // export const addText = (text: string) => {
 
-
-
-
 // }
+
+
+

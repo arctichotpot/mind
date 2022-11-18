@@ -12,7 +12,8 @@ export default function AddModal({ visible, onCallback }: Props) {
 
   const handleOk = () => {
     form.current?.formApi.validate().then((res) => {
-      if (onCallback) onCallback({ ...res, id: nanoid() } as DashboardCallbackParams)
+      if (onCallback)
+        onCallback({ ...res, id: nanoid() } as DashboardCallbackParams)
     })
   }
   const handleCancel = () => {

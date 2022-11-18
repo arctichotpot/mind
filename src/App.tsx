@@ -22,7 +22,7 @@ const BorderStyle = styled.div`
 export default function App() {
   return (
     <AppContainer>
-      <BorderStyle>
+      <BorderStyle id="border-style">
         <LocaleProvider locale={en_US}>
           <Outlet />
         </LocaleProvider>

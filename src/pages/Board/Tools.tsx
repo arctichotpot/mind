@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { IconText, IconGallery } from '@douyinfe/semi-icons'
 import { Button, Space, Tooltip } from '@douyinfe/semi-ui'
-import Item from '@douyinfe/semi-ui/lib/es/cascader/item'
 import { ReactElement } from 'react'
 const ToolsStyle = styled.div`
   padding: 10px;

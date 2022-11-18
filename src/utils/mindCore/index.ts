@@ -1,7 +1,7 @@
 import { G, Rect, Svg, SVG } from "@svgdotjs/svg.js"
 
 interface CoreProps {
-    el: HTMLElement // 
+    el: HTMLElement
 }
 
 
@@ -38,9 +38,7 @@ export class MindCore {
     }
 
 
-
 }
-
 
 
 // <rect width="328.640625" height = "41" fill = "#1e3556" stroke - dasharray="none" stroke - width="2" stroke = "#bdc5c9" rx = "10" ry = "10" > </rect>
