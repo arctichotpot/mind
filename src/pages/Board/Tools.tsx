@@ -33,6 +33,11 @@ export default function Tools({ onChange }: Props) {
       value: 'text',
       icon: <IconText />,
     },
+    {
+      label: 'Card',
+      value: 'card',
+      icon: <IconText />,
+    },
   ]
 
   const handleClickTool = (item: ToolsList) => {
