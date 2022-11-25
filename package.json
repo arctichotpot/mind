@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dnd-kit/core": "^6.0.5",
+    "@dnd-kit/sortable": "^7.0.1",
     "@douyinfe/semi-ui": "^2.21.2",
     "date-fns": "^2.29.3",
     "lodash": "^4.17.21",
     "nanoid": "^4.0.0",
     "qs": "^6.11.0",
+    "re-resizable": "^6.9.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-moveable": "^0.42.1",

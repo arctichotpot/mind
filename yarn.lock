@@ -265,6 +265,37 @@
   resolved "https://registry.npmmirror.com/@daybrush/utils/-/utils-1.10.0.tgz#2a2235269b960b7ffaf05ca2e75379ea1fb58204"
   integrity sha512-IDT0DWAGcjxb2+WMr8pHrVTkHVKdilBumX1SubXJUlowN4rMSLphwDxvMNfv+vQOrdCPXSoPVZ3mhfrHsQ9Xow==
 
+"@dnd-kit/accessibility@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.npmmirror.com/@dnd-kit/accessibility/-/accessibility-3.0.1.tgz#3ccbefdfca595b0a23a5dc57d3de96bc6935641c"
+  integrity sha512-HXRrwS9YUYQO9lFRc/49uO/VICbM+O+ZRpFDe9Pd1rwVv2PCNkRiTZRdxrDgng/UkvdC3Re9r2vwPpXXrWeFzg==
+  dependencies:
+    tslib "^2.0.0"
+
+"@dnd-kit/core@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.npmmirror.com/@dnd-kit/core/-/core-6.0.5.tgz#5670ad0dcc83cd51dbf2fa8c6a5c8af4ac0c1989"
+  integrity sha512-3nL+Zy5cT+1XwsWdlXIvGIFvbuocMyB4NBxTN74DeBaBqeWdH9JsnKwQv7buZQgAHmAH+eIENfS1ginkvW6bCw==
+  dependencies:
+    "@dnd-kit/accessibility" "^3.0.0"
+    "@dnd-kit/utilities" "^3.2.0"
+    tslib "^2.0.0"
+
+"@dnd-kit/sortable@^7.0.1":
+  version "7.0.1"
+  resolved "https://registry.npmmirror.com/@dnd-kit/sortable/-/sortable-7.0.1.tgz#99c6012bbab4d8bb726c0eef7b921a338c404fdb"
+  integrity sha512-n77qAzJQtMMywu25sJzhz3gsHnDOUlEjTtnRl8A87rWIhnu32zuP+7zmFjwGgvqfXmRufqiHOSlH7JPC/tnJ8Q==
+  dependencies:
+    "@dnd-kit/utilities" "^3.2.0"
+    tslib "^2.0.0"
+
+"@dnd-kit/utilities@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.npmmirror.com/@dnd-kit/utilities/-/utilities-3.2.0.tgz#b3e956ea63a1347c9d0e1316b037ddcc6140acda"
+  integrity sha512-h65/pn2IPCCIWwdlR2BMLqRkDxpTEONA+HQW3n765HBijLYGyrnTCLa2YQt8VVjjSQD6EfFlTE6aS2Q/b6nb2g==
+  dependencies:
+    tslib "^2.0.0"
+
 "@douyinfe/semi-animation-react@2.21.2":
   version "2.21.2"
   resolved "https://registry.npmmirror.com/@douyinfe/semi-animation-react/-/semi-animation-react-2.21.2.tgz"
@@ -462,18 +493,6 @@
   integrity sha512-JVKBhN0tm2Srl+Yt+Ywqu0oLgLcdemDQlD1OxmN9jaCTwaFPZ7tY8n6dhVgMEaR9qcR7r+kAlMXnSfNyYdE+Vg==
   dependencies:
     "@daybrush/utils" "^1.4.0"
-
-"@svgdotjs/svg.draggable.js@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.npmmirror.com/@svgdotjs/svg.draggable.js/-/svg.draggable.js-3.0.2.tgz#a8d935ce495a40ab575e8bc11406ae61ebb4f455"
-  integrity sha512-yqCJe/w1q3IK51zRiqB42rsvQHyX5oqg/Eck02TDRhRv+pQ7sSHJfdyljiGkqoFW4i/1sIpnqYmiLDeM12Nhsw==
-  dependencies:
-    "@svgdotjs/svg.js" "^3.0.10"
-
-"@svgdotjs/svg.js@^3.0.10", "@svgdotjs/svg.js@^3.1.2":
-  version "3.1.2"
-  resolved "https://registry.npmmirror.com/@svgdotjs/svg.js/-/svg.js-3.1.2.tgz"
-  integrity sha512-0ZCWTiuRjCXT2SUoVDiu+8DLuRQlkxZbO680Y2QkV7jNsULzJajrx6A3MxA/IBQg6UGV5csgPZ8w7U57hZSK+A==
 
 "@types/hoist-non-react-statics@*":
   version "3.3.1"
@@ -711,7 +730,7 @@ css-color-keywords@^1.0.0:
   resolved "https://registry.npmmirror.com/css-color-keywords/-/css-color-keywords-1.0.0.tgz"
   integrity sha512-FyyrDHZKEjXDpNJYvVsV960FiqQyXc/LlYmsxl2BcdMb2WPx0OGRVgTg55rPSyLSNMqP52R9r8geSp7apN3Ofg==
 
-css-styled@^1.0.0, css-styled@~1.0.1:
+css-styled@~1.0.1:
   version "1.0.1"
   resolved "https://registry.npmmirror.com/css-styled/-/css-styled-1.0.1.tgz#803dc2bf615954805a56679cc500065c756ad525"
   integrity sha512-psJCbNDPPusDBWH/gszP6BetPh577QaqpvaysTNPitxX0nxdGiTgELiOCus0gZ0yXk3gvjShBrFP07nvn58/TQ==
@@ -1074,11 +1093,6 @@ json5@^2.2.1:
   resolved "https://registry.npmmirror.com/json5/-/json5-2.2.1.tgz"
   integrity sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==
 
-konva@^8.3.14:
-  version "8.3.14"
-  resolved "https://registry.npmjs.org/konva/-/konva-8.3.14.tgz"
-  integrity sha512-6I/TZppgY3Frs//AvZ87YVQLFxLywitb8wLS3qMM+Ih9e4QcB5Yy8br6eq7DdUzxPdbsYTz1FQBHzNxs08M1Tw==
-
 lodash@^4.17.11, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.npmmirror.com/lodash/-/lodash-4.17.21.tgz"
@@ -1109,16 +1123,6 @@ minimatch@^3.1.1:
   integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
   dependencies:
     brace-expansion "^1.1.7"
-
-moveable@^0.39.1:
-  version "0.39.1"
-  resolved "https://registry.npmmirror.com/moveable/-/moveable-0.39.1.tgz#1708bd43e370e0977920066dd81297e1fb9c2ef5"
-  integrity sha512-AQqVzA9ZhQNkRV/vBaLnihDmD8YtdJ+9m/YqhB4pyURkFWGoONchFuQ8TIu7M+IVyXXVUFMKHlCLqQrfggQvLw==
-  dependencies:
-    "@scena/event-emitter" "^1.0.5"
-    react-compat-moveable "~0.27.1"
-    react-moveable "~0.42.1"
-    react-simple-compat "^1.2.3"
 
 ms@2.1.2:
   version "2.1.2"
@@ -1219,37 +1223,12 @@ qs@^6.11.0:
   dependencies:
     side-channel "^1.0.4"
 
-react-compat-css-styled@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.npmmirror.com/react-compat-css-styled/-/react-compat-css-styled-1.0.9.tgz#70ed3ed8d8000fe01cb5ce15ee7723a094165db1"
-  integrity sha512-YpUgTpXU1wR58aPQJVGAWq6QeEFWkafV0qq4Y8KRUwpQJLbJF2GYu5ZQ/kafHGvN3dqQX2e340NlNZ+zbZZv2w==
-  dependencies:
-    "@daybrush/utils" "^1.0.0"
-    css-styled "^1.0.0"
-    framework-utils "^1.1.0"
-    react-css-styled "~1.0.4"
+re-resizable@^6.9.9:
+  version "6.9.9"
+  resolved "https://registry.npmmirror.com/re-resizable/-/re-resizable-6.9.9.tgz#99e8b31c67a62115dc9c5394b7e55892265be216"
+  integrity sha512-l+MBlKZffv/SicxDySKEEh42hR6m5bAHfNu3Tvxks2c4Ah+ldnWjfnVRwxo/nxF27SsUsxDS0raAzFuJNKABXA==
 
-react-compat-moveable@~0.27.1:
-  version "0.27.1"
-  resolved "https://registry.npmmirror.com/react-compat-moveable/-/react-compat-moveable-0.27.1.tgz#79d90afc5b9c90beee6cd7ac2384cb3e966458e6"
-  integrity sha512-eKoIcoNssAu7M7aQv0hcm0qbs8eknpdeJC6s37ojjXLy6YWm6KNHUisH7YLigEgBN8nbbO3WtimaJlh70RnfOw==
-  dependencies:
-    "@daybrush/utils" "^1.10.0"
-    "@egjs/agent" "^2.2.1"
-    "@egjs/children-differ" "^1.0.1"
-    "@egjs/list-differ" "^1.0.0"
-    "@scena/dragscroll" "^1.3.0"
-    "@scena/event-emitter" "^1.0.5"
-    "@scena/matrix" "^1.1.1"
-    css-to-mat "^1.0.3"
-    framework-utils "^1.1.0"
-    gesto "^1.13.4"
-    overlap-area "^1.1.0"
-    react-compat-css-styled "^1.0.9"
-    react-css-styled "^1.0.4"
-    react-moveable "~0.42.1"
-
-react-css-styled@^1.0.4, react-css-styled@~1.0.4:
+react-css-styled@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmmirror.com/react-css-styled/-/react-css-styled-1.0.4.tgz#236ce398232dc152084bbf20540df1c971534174"
   integrity sha512-nRske1bAKOCaf7Gf3o76tKQFIYggaW1qH4rutBlitH5lYnRPA7WoAYKrcxqdUPZd00oASg3SvFZSh3Mc1Wvj3w==
@@ -1265,7 +1244,7 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-draggable@^4.0.3, react-draggable@^4.4.5:
+react-draggable@^4.0.3:
   version "4.4.5"
   resolved "https://registry.npmmirror.com/react-draggable/-/react-draggable-4.4.5.tgz"
   integrity sha512-OMHzJdyJbYTZo4uQE393fHcqqPYsEtkjfMgvCHr6rejT+Ezn4OZbNyGH50vv+SunC1RMvwOTSWkEODQLzw1M9g==
@@ -1278,7 +1257,7 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.npmmirror.com/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-moveable@^0.42.1, react-moveable@~0.42.1:
+react-moveable@^0.42.1:
   version "0.42.1"
   resolved "https://registry.npmmirror.com/react-moveable/-/react-moveable-0.42.1.tgz#4a27261f09fb8101680fa75b6fe6021726e407b2"
   integrity sha512-AU3h//U7xKLrPJlbRANMWojfAlqVqyZIIeNGGKHjT5JTa8SGwKXVmiz+OlRuvgy5fEIK/ufnUGGoUE+8giAvyQ==
@@ -1323,14 +1302,6 @@ react-router@6.4.2:
   integrity sha512-Rb0BAX9KHhVzT1OKhMvCDMw776aTYM0DtkxqUBP8dNBom3mPXlfNs76JNGK8wKJ1IZEY1+WGj+cvZxHVk/GiKw==
   dependencies:
     "@remix-run/router" "1.0.2"
-
-react-simple-compat@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.npmmirror.com/react-simple-compat/-/react-simple-compat-1.2.3.tgz#26c330d84cb20b2036ff443303ca5250a1e5c674"
-  integrity sha512-vYepRjSriGRyEmFtSsTQoHWVQRbBMYR4ONATeZtuf8GDY8jWGkc6R4+lIb5rVhPBIkx3ru68bpl+9r8V4YA/nA==
-  dependencies:
-    "@daybrush/utils" "^1.0.0"
-    "@egjs/list-differ" "^1.0.0"
 
 react-sortable-hoc@^2.0.0:
   version "2.0.0"
@@ -1492,6 +1463,11 @@ to-regex-range@^5.0.1:
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
+
+tslib@^2.0.0:
+  version "2.4.1"
+  resolved "https://registry.npmmirror.com/tslib/-/tslib-2.4.1.tgz#0d0bfbaac2880b91e22df0768e55be9753a5b17e"
+  integrity sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==
 
 typescript@^4.6.4:
   version "4.8.4"
